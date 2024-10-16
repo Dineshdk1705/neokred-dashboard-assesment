@@ -7,9 +7,9 @@ const Navbar = ({ toggleSidebar }) => {
       <button onClick={toggleSidebar} className="text-xl">
         <HiMenuAlt4 />
       </button>
-      <h1 className="text-lg">
+      <div className="text-lg">
         <Profile />
-      </h1>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Home",
+    "icon": "IoMdHome",
+    "iconSize": 18
+  },
+  {
+    "title": "Events",
+    "icon": "FaClone",
+    "iconSize": 12
+  },
+  {
+    "title": "Orders",
+    "icon": "RiShoppingBagFill",
+    "iconSize": 18
+  },
+  {
+    "title": "Settings",
+    "icon": "RiSettings3Fill",
+    "iconSize": 18
+  }
+]

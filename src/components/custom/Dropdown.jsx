@@ -3,7 +3,7 @@ import { BiCode } from "react-icons/bi";
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef();
+  const dropdownRef = useRef(null);
 
   useEffect(() => {
     const handleOutSideClick = (e) => {

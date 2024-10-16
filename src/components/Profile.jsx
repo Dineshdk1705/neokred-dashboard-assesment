@@ -4,7 +4,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Profile = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const profileRef = useRef();
+  const profileRef = useRef(null);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -16,16 +16,14 @@ const Profile = () => {
         setIsOpen(false);
       }
     };
-
     document.addEventListener("mousedown", handleOutSideClick);
-
     return () => document.removeEventListener("mousedown", handleOutSideClick);
   }, [profileRef]);
 
   return (
     <div className="relative" ref={profileRef}>
       <div
-        className="flex items-center space-x-2 cursor-pointer p-2 rounded-lg lg:hover:bg-gray-800"
+        className="flex items-center space-x-2 cursor-pointer p-2 rounded-lg lg:hover:bg-[#272727]"
         onClick={toggleDropdown}
       >
         <img

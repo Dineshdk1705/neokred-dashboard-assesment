@@ -1,41 +1,7 @@
 import Card from "./custom/Card";
 import Dropdown from "./custom/Dropdown";
 import Table from "./custom/Table";
-
-const cardData = [
-  {
-    title: "Total revenue",
-    value: "2.6M",
-    tagValue: 4.5,
-    isProfit: true,
-    currency: "$",
-    tagDescription: "from last week",
-  },
-  {
-    title: "Average order value",
-    value: "455",
-    tagValue: 0.5,
-    isProfit: false,
-    currency: "$",
-    tagDescription: "from last week",
-  },
-  {
-    title: "Total sold",
-    value: "5,888",
-    tagValue: 4.5,
-    tagColor: "44b342",
-    isProfit: true,
-    tagDescription: "from last week",
-  },
-  {
-    title: "Pageviews",
-    value: "823,067",
-    tagValue: 21.2,
-    tagColor: "44b342",
-    isProfit: true,
-    tagDescription: "from last week",
-  },
-];
+import cardData from "./../data/card-data.json";
 
 const Dashboard = () => {
   return (
