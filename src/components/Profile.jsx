@@ -29,7 +29,7 @@ const Profile = () => {
         onClick={toggleDropdown}
       >
         <img
-          src="/images/profile.jpeg"
+          src="/images/myProfile.jpeg"
           alt="Profile"
           className="rounded-full w-10 h-10"
         />
