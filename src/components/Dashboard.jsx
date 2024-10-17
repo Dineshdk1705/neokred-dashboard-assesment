@@ -9,7 +9,7 @@ const Dashboard = () => {
       className="lg:ml-64 mt-[2.8rem] lg:mt-0 px-6 lg:px-12 pt-11 h-screen bg-[#141414]"
       style={{ scrollBehavior: "smooth" }}
     >
-      <h2 className="font-bold">Good afternoon, Dinesh</h2>
+      <h2 className="font-bold text-lg">Good afternoon, Dinesh</h2>
 
       <div className="flex items-end justify-between mt-12 mb-4">
         <div className="text-sm">Overview</div>

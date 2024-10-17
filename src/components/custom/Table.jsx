@@ -8,21 +8,21 @@ const Table = () => {
         <table className="min-w-[640px] sm:min-w-full border-collapse text-sm">
           <thead>
             <tr className="bg-transparent border-b-[1px] border-gray-800 text-gray-400">
-              <th className="pr-2 py-2 text-left font-normal whitespace-nowrap">
-                Order number
-              </th>
-              <th className="pr-2 py-2 text-left font-normal whitespace-nowrap">
-                Purchase date
-              </th>
-              <th className="pr-2 py-2 text-left font-normal whitespace-nowrap">
-                Customer
-              </th>
-              <th className="pr-2 py-2 text-left font-normal whitespace-nowrap">
-                Event
-              </th>
-              <th className="pr-2 py-2 text-right font-normal whitespace-nowrap">
-                Amount
-              </th>
+              {Object.keys(tableData[0])
+                .filter((key) => key !== "imgSrc" && key !== "currency")
+                .map((key, index, arr) => {
+                  const lastKey = index === arr.length - 1;
+                  return (
+                    <th
+                      key={index}
+                      className={`pr-2 py-2 ${
+                        lastKey ? "text-right" : "text-left"
+                      } font-normal whitespace-nowrap`}
+                    >
+                      {key}
+                    </th>
+                  );
+                })}
             </tr>
           </thead>
           <tbody>
